@@ -25,13 +25,18 @@ header{
     color: #242424;
     font-family: 'Nunito', sans-serif;
     font-weight: 600;
+    cursor: pointer;
 }
 
 .background{
     background-image: url(/assets/forma1.svg);
     background-repeat: no-repeat;
-    background-position: left;
+    background-position: bottom left;
     background-position-x: -30mm;
+    background-size: 35%;
+    display: flex;
+    
+    flex-direction: column;
 }
 
 .content{
@@ -40,13 +45,14 @@ header{
     align-items: center;
     flex-direction: row;
     /* background-color: blue; */
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 70px;
+    padding-bottom: 90px;
 
     background-image: url(/assets/forma2.svg);
     background-repeat: no-repeat;
-    background-position: left;
-    background-position-x: 950px;
+    background-position: top right;
+    background-position-x: 1060px;
+    background-size: 35%;
 }
 
 .content__left{
@@ -84,7 +90,7 @@ header{
     transition: opacity ease-in 150ms;
 }
 
-.content_interaction__button:hover{
+.content_interaction__button:hover, .menu__item:hover{
     opacity: 0.8;
 }
 
@@ -92,11 +98,16 @@ header{
     margin-left: 10px;
 }
 
+.content__cup{
+    display: flex;
+    width: 182px;
+    height: 305px;
+}
+
 .scroll{
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
 
 .scroll__text{
@@ -109,5 +120,5 @@ header{
 .scroll__icon{
     display: flex;
     width: 20px;
-
+    padding-top: 12px;
 }
